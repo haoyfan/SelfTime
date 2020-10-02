@@ -51,7 +51,7 @@ def parse_option():
 
 if __name__ == "__main__":
     import os
-    os.environ['CUDA_VISIBLE_DEVICES']='1'
+    os.environ['CUDA_VISIBLE_DEVICES']='0'
     import numpy as np
 
     opt = parse_option()
@@ -76,8 +76,8 @@ if __name__ == "__main__":
     else:
         opt.aug_type = [aug1, aug2]
 
-    log_dir = './log/{}/{}/{}/{}/{}'.format(
-        exp, opt.dataset_name, opt.model_name, '_'.join(opt.aug_type), model_paras)
+    log_dir = './results/{}/{}/{}'.format(
+        exp, opt.dataset_name, opt.model_name)
 
     if not os.path.exists(log_dir):
         os.makedirs(log_dir)

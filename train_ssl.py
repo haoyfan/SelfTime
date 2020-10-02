@@ -44,7 +44,7 @@ def parse_option():
                         help='Data path for checkpoint.')
     # method
     parser.add_argument('--backbone', type=str, default='SimConv4')
-    parser.add_argument('--model_name', type=str, default='SelfTime',
+    parser.add_argument('--model_name', type=str, default='InterSample',
                         choices=['InterSample', 'IntraTemporal', 'SelfTime'], help='choose method')
     parser.add_argument('--config_dir', type=str, default='./config', help='The Configuration Dir')
 

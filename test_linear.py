@@ -55,7 +55,7 @@ def parse_option():
 
 if __name__ == "__main__":
     import os
-    os.environ['CUDA_VISIBLE_DEVICES']='3'
+    os.environ['CUDA_VISIBLE_DEVICES']='0'
     import numpy as np
 
     opt = parse_option()
@@ -65,7 +65,7 @@ if __name__ == "__main__":
 
     exp = 'exp-linear-evaluation'
     exp_ckpt = 'linear_eval'
-    backname='init'
+    backname='last'
 
     aug1 = 'magnitude_warp'
     aug2 = 'time_warp'
@@ -89,11 +89,11 @@ if __name__ == "__main__":
         opt.aug_type = [aug1, aug2]
 
     if backname=='init':
-        log_dir = './results/{}/{}/Random/{}/{}'.format(exp, opt.dataset_name, '_'.join(opt.aug_type),
-                                                    model_paras)
+        log_dir = './results/{}/{}/Random'.format(
+            exp, opt.dataset_name)
     else:
-        log_dir = './results/{}/{}/{}/{}/{}'.format(exp, opt.dataset_name, opt.model_name, '_'.join(opt.aug_type),
-                                                    model_paras)
+        log_dir = './results/{}/{}/{}'.format(
+            exp, opt.dataset_name, opt.model_name)
 
     if not os.path.exists(log_dir):
         os.makedirs(log_dir)
