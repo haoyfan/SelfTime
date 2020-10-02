@@ -1,8 +1,4 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/9/28 11:31
-# @Author  : Haoyi Fan
-# @Email   : isfanhy@gmail.com
-# @File    : main.py
 
 import datetime
 from optim.pretrain import *

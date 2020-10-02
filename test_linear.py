@@ -1,8 +1,4 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/9/28 10:26
-# @Author  : Haoyi Fan
-# @Email   : isfanhy@gmail.com
-# @File    : test_linear.py
 
 
 import datetime

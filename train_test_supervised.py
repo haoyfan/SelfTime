@@ -1,8 +1,4 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/9/28 10:25
-# @Author  : Haoyi Fan
-# @Email   : isfanhy@gmail.com
-# @File    : main_supervised.py
 
 
 import datetime

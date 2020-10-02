@@ -1,8 +1,4 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/9/28 10:27
-# @Author  : Haoyi Fan
-# @Email   : isfanhy@gmail.com
-# @File    : test_domain.py
 
 import datetime
 from dataloader.ucr2018 import load_ucr2018
