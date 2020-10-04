@@ -7,13 +7,13 @@ This repository contains the official PyTorch implementation of:
 
 
 
-![motivation](./img/motivation.jpg)
+![motivation](img/motivation.jpg)
 
 
 
 **Abstract:** Self-supervised learning achieves superior performance in many domains by extracting useful representations from the unlabeled data. However, most of traditional self-supervised methods mainly focus on exploring the inter-sample structure while less efforts have been concentrated on the underlying intra-temporal structure, which is important for time series data. In this paper, we present SelfTime: a general Self-supervised Time series representation learning framework, by exploring the inter-sample relation and intra-temporal relation of time series to learn the underlying structure feature on the unlabeled time series. Specifically, we first generate the inter-sample relation by sampling positive and negative samples of a given anchor sample, and intra-temporal relation by sampling time pieces from this anchor. Then, based on the sampled relation, a shared feature extraction backbone combined with two separate relation reasoning heads are employed to quantify the relationships of the sample pairs for inter-sample relation reasoning, and the relationships of the time piece pairs for intra-temporal relation reasoning, respectively. Finally, the useful representations of time series are extracted from the backbone under the supervision of relation reasoning heads. Experimental results on multiple real-world time series datasets for time series classification task demonstrate the effectiveness of the proposed method.
 
-![SelfTime](./img/method.jpg)
+![SelfTime](img/method.jpg)
 
 ## Requirements
 
@@ -67,3 +67,14 @@ After runing model training and evaluation, the checkpoints of the trained model
 
 ### Cite
 If you make use of this code in your own work, please cite our paper.
+```bash
+@inproceedings{
+anonymous2021selfsupervised,
+title={Self-Supervised Time Series Representation Learning by Inter-Intra Relational Reasoning},
+author={Anonymous},
+booktitle={Submitted to International Conference on Learning Representations},
+year={2021},
+url={https://openreview.net/forum?id=qFQTP00Q0kp},
+note={under review}
+}
+```
