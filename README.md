@@ -71,7 +71,7 @@ If you make use of this code in your own work, please cite our paper.
 @inproceedings{
 anonymous2021selfsupervised,
 title={Self-Supervised Time Series Representation Learning by Inter-Intra Relational Reasoning},
-author={Anonymous},
+author={Haoyi Fan, Fengbin Zhang, Yue Gao},
 booktitle={Submitted to International Conference on Learning Representations},
 year={2021},
 url={https://openreview.net/forum?id=qFQTP00Q0kp},
