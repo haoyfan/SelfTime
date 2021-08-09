@@ -65,7 +65,7 @@ python train_test_supervised.py --dataset_name CricketX --model_name SupCE
 After runing model training and evaluation, the checkpoints of the trained model are saved in the local [ckpt] directory, the training logs are saved in the local [log] directory, and all experimental results are saved in the local [results] directory.
 
 
-### Cite
+<!-- ### Cite
 If you make use of this code in your own work, please cite our paper.
 ```bash
 @inproceedings{
@@ -77,4 +77,4 @@ year={2021},
 url={https://openreview.net/forum?id=qFQTP00Q0kp},
 note={under review}
 }
-```
+``` -->
